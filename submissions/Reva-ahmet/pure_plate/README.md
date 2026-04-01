@@ -1,38 +1,45 @@
 # PurePlate
 
 ## Project Title
-PurePlate – Recipe Discovery & Nutrition App (Flutter App)
+**PurePlate** – Three-Page Recipe Application (Flutter Prototype)
 
 ---
 
 ## Research Problem
-Finding organized recipe information quickly can be difficult. Many cooking apps are cluttered with ads and unnecessary steps, making it hard for users to find simple nutritional data and ingredient lists while cooking.
+People often struggle to find clear, organized recipe information quickly. Navigating through cluttered websites for simple meal details can be frustrating. There is a need for a streamlined, focused interface that presents recipes, ingredients, and nutrition in a straightforward way.
 
 ---
 
 ## Motivation
-The purpose of this project is to build a streamlined tool that helps users discover recipes and view details in a clean, structured way. The goal is to minimize clutter and maximize the focus on the cooking instructions and health data.
+The goal of this project is to develop a clean, user-friendly mobile prototype that simplifies the recipe discovery process. By focusing on a linear navigation flow and high-quality UI, the project aims to show how a structured digital cookbook can improve the cooking experience.
 
 ---
 
 ## Control Flow
-* The application starts from the **Splash Screen**.
-* The user moves to the **Recipe Discovery** screen to browse.
-* Upon selecting a recipe, the user is redirected to the **Details Page**.
-* The Details Page displays:
-    * Recipe name and image
-    * Ingredient list (List)
-    * Nutritional breakdown (Calories, Protein, etc.)
+* **Home Screen:** The user starts at the Splash/Home screen, which introduces the app.
+* **Recipe Discovery:** The user moves to the discovery layer to browse categories or search for specific meals.
+* **Recipe Details:** Upon selecting a recipe (like the Chicken Caesar Salad), the app transitions to a detailed view.
+* **Data Passing:** The app passes specific parameters to ensure the correct nutritional info and ingredients are displayed.
 
 ---
 
 ## Implementation Strategy
-* Built using **Flutter (Dart)**.
-* Application is structured into multiple pages:
-    * `main.dart` → entry point and routing
-    * `home.dart` → splash and home screen
-    * `discovery.dart` → recipe list and search
-    * `details.dart` → recipe information display
-* Data is managed through **Dart Classes** and static lists.
-* Processing: The code manages the app's data and **switches between different screens.**
-* `pubspec.yaml` was used to manage the app's dependencies and assets.
+* **Framework:** Built using **Flutter** and **Dart**.
+* **UI Architecture:** Designed with a Widget-based approach across three core pages.
+* **Navigation:** Uses **Flutter Navigator** to handle the flow and transfer data between screens.
+* **Data Management:** * Recipes are structured as **Dart Objects**.
+    * Information is stored in static lists for fast retrieval.
+    * The app filters information and **switches between different screens.**
+
+---
+
+## App Structure
+* `lib/main.dart` → Entry point and app configuration.
+* `pubspec.yaml` → Used to manage dependencies and assets.
+
+---
+
+## How to Run
+```bash
+flutter pub get
+flutter run
